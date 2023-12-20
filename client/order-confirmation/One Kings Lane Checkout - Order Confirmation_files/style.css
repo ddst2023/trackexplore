@@ -1,0 +1,734 @@
+/*---------------FONTS---------------*/
+        
+@font-face {
+    font-family: 'AveresTitleRoman-Regular';
+    src: url('/fonts/36D628_0_0.eot');
+    src: url('/fonts/36D628_0_0.eot?#iefix') format('embedded-opentype'), url('/fonts/36D628_0_0.woff2') format('woff2'), url('/fonts/36D628_0_0.woff') format('woff'), url('/fonts/fonts/36D628_0_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: "NeutrafaceText-Book";
+    src: url("/fonts/NeutrafaceText-Book.woff2") format("woff2"), url("/fonts/NeutrafaceText-Book.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: "NeutrafaceText-Demi";
+    src: url("/fonts/NeutrafaceText-Demi.woff2") format("woff2"), url("/fonts/NeutrafaceText-Demi.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: "NeutrafaceText-Light";
+    src: url("/fonts/NeutrafaceText-Light.woff2") format("woff2"), url("/fonts/NeutrafaceText-Light.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Globals
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+h1 {
+    font-size: 40px
+}
+h2 {
+    margin-bottom: 10px
+}
+hr {
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background-color: #c8c8c8;
+}
+/*--
+p {
+    margin-bottom: 30px
+}
+--*/
+
+p:last-child {
+    margin-bottom: 0
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Navigation
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+nav {
+    background-color: #ff3c3c;
+    padding: 10px 0 6px 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    line-height: 1;
+}
+nav a {
+    display: block;
+    margin-bottom: 4px;
+    padding: 10px;
+    background-color: #fff;
+    color: #ff3c3c;
+}
+nav a.active,
+nav a:hover {
+    background-color: #6f0000;
+    color: #fff;
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Demo 1
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.demo-1 .main .container {
+    padding: 0 360px 0 30px;
+    overflow: hidden;
+}
+.demo-1 .content {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+.demo-1 .sidebar {
+    float: right;
+    margin-right: -330px;
+    width: 300px;
+    background-color: #fff;
+}
+.demo-1 .content,
+.demo-1 .sidebar {
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+.demo-1 section,
+.demo-1 aside {
+    padding: 30px
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Demo 2
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.demo-2 .main .container {
+    padding: 0 360px 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+.demo-2 .content {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+.demo-2 .sidebar {
+    float: right;
+    margin-right: -330px;
+    width: 300px;
+    background-color: #fff;
+}
+.demo-2 .content:after,
+.demo-2 .sidebar:after {
+    display: block;
+    position: absolute;
+    height: 100%;
+    content: "";
+    background-color: #fff;
+}
+.demo-2 .content:after {
+    left: 30px;
+    right: 360px;
+}
+.demo-2 .sidebar:after {
+    right: 30px;
+    width: 300px;
+}
+.demo-2 section,
+.demo-2 aside {
+    padding: 30px
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Demo 3
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.demo-3 .main .container {
+    padding: 0 0
+}
+.demo-3 .table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 30px 0;
+}
+.demo-3 .row {
+    display: table-row
+}
+.demo-3 .col {
+    display: table-cell;
+    background-color: #fff;
+    padding: 30px;
+}
+.demo-3 .col.sidebar {
+    width: 300px
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Media Queries
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+@media all and (max-width: 840px) { 
+  /* demo 1 */
+  .demo-1 .main .container {
+      padding: 0 30px;
+      overflow: visible;
+  }
+  .demo-1 .content {
+      float: none
+  }
+  .demo-1 .sidebar {
+      float: none;
+      margin-right: 0;
+      width: 100%;
+  }
+  .demo-1 .content,
+  .demo-1 .sidebar {
+      padding-bottom: 0;
+      margin-bottom: 0;
+  }
+  .demo-1 .content {
+      margin-bottom: 30px
+  }
+  /* demo 2 */
+  .demo-2 .main .container {
+      padding: 0 30px;
+      overflow: visible;
+  }
+  .demo-2 .content {
+      float: none;
+      margin-bottom: 30px;
+  }
+  .demo-2 .sidebar {
+      float: none;
+      margin-right: 0;
+      width: 100%;
+  }
+  .demo-2 .content:after,
+  .demo-2 .sidebar:after {
+      display: none
+  }
+  /* demo 3 */
+  .demo-3 .main .container {
+      padding: 0 30px
+  }
+  .demo-3 .table {
+      display: block
+  }
+  .demo-3 .row {
+      display: block
+  }
+  .demo-3 .col {
+      display: block
+  }
+  .demo-3 .col.content {
+      margin-bottom: 30px
+  }
+  .demo-3 .col.sidebar {
+      width: 100%
+  }
+}
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Test Mobile
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.mobile-module-2 {
+    width:49%;
+    margin-bottom:10px;
+}
+
+.mobile-module-2 img {
+    width:100%;
+}
+
+.mobile-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-module {
+margin-bottom: 10px;
+width: 100%;
+}
+
+.mobile-module img {
+  width:100%;
+}
+
+.mobile-copy {
+  font-family: NeutrafaceText-Book;
+		font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    margin: 0 20px;
+		-moz-font-feature-settings: "kern", "liga", "clig", "calt";
+		-ms-font-feature-settings: "kern", "liga", "clig", "alt";
+		-webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+.backgroundVideo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.makeityou-copyblock {
+    padding-bottom:10px;
+}
+
+ /* VIDEO PLAYER */
+ .zgVideoPlayer {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 2;
+}
+.zgVideoPlayer video {
+    width: 100%;
+}
+.zgVideoPlayer .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-size: cover;
+    z-index: 99;
+}
+.zgVideoPlayer .playButtonDefault {
+    border: 8px #FFFFFF solid;
+}
+
+.zgVideoPlayer .playButtonDefault:before {
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    width: 0;
+    height: 0;
+    border: 32px transparent solid;
+    border-left: 32px #FFFFFF solid;
+    content: "";
+    z-index: 5;
+}
+/** END VIDEO PLAYER **/
+
+/* Video Product Styles */
+.zgVideoProducts {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1680px;
+    z-index: 2;
+}
+.zgVideoProducts video {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 2;
+}
+.zgVideoProducts .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    z-index: 5;
+}
+.zgVideoProducts .playButton.playOverlay {
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.zgVideoProducts .playButtonDefault {
+    border: 8px #FFFFFF solid;
+}
+.zgVideoProducts video,
+.zgVideoProducts .playButton {
+    cursor: pointer;
+}
+.zgVideoProducts .playButtonDefault:before {
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    width: 0;
+    height: 0;
+    border: 32px transparent solid;
+    border-left: 32px #FFFFFF solid;
+    content: "";
+    z-index: 5;
+}
+
+/* DYNAMIC VIDEO PRODUCTS */
+.videoProductContainer {
+    display: flex;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 1595px;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.videoProductContainer .productBox {
+    flex: 0 0 auto;
+    margin: 10px;
+    width: 150px;
+    height: 210px;
+    text-align: center;
+}
+
+.videoProductContainer .productBox a,
+.videoProductContainer .productBox img {
+    color: #000000;
+    font: normal 18px NeutrafaceText-Book;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    display: block;
+}
+
+.videoProductContainer .productBox .timeStamp:hover {
+    cursor: pointer;
+}
+
+.videoProductContainer .productBox h3,
+.videoProductContainer .productBox .timeStamp {
+    display: inline-block;
+    padding: 10px 0;
+    font: normal 14px NeutrafaceText-Book;
+}
+
+.videoProductContainer .productBox h3 span,
+.videoProductContainer .productBox .timeStamp span {
+    border-bottom: 1px #000 solid;
+}
+
+.topExpandable-out-contanier {
+    z-index: 9999 !important;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .videoProductContainer .productBox {
+        width: 250px;
+        height: 310px;
+    }
+    .videoProductContainer .productBox a,
+    .videoProductContainer .productBox img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .videoProductContainer .productBox h3,
+    .videoProductContainer .productBox .timeStamp {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .zgVideoContainer {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .zgVideoContainer iframe {
+        width: 100% !important;
+    }
+}
+
+/* END */
+
+/*---------------MOBILE HOME---------------*/
+
+.numberfix {
+    text-decoration: none;
+    font-family: NeutrafaceText-Book;
+    font-weight: normal;
+    font-style: normal;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt", "case";
+    -ms-font-feature-settings: "kern", "liga", "clig", "alt", "case";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "case";
+    font-feature-settings: "kern", "liga", "clig", "calt", "case";
+}
+
+.mobile-home a {
+    text-decoration:none;
+    color: black;
+}
+
+.mobile-white {
+    color: white;
+}
+
+.mobile-home-module {
+    margin-bottom: 30px;
+}
+
+.m-contain {
+    position: relative;
+    text-align: center;
+}
+
+.contain-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.mobile-headline-l {
+    font-family: AveresTitleRoman-Regular;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0px;
+    margin: 0 0 5px 0;
+    line-height:32px;
+}
+
+.mobile-home-copy {
+    font-family: NeutrafaceText-Book;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin: -2px 0 5px 0;
+    line-height: 24px;
+
+}
+
+.mobile-cta {
+    font-family: NeutrafaceText-Demi;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height:28px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: black 1px solid;
+    padding-bottom: 1px;
+    margin: 0 0 5px 0;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+    -ms-font-feature-settings: "kern", "liga", "clig", "alt", "smcp";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+    font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+}
+
+.mobile-cta-white {
+    color: #fff;
+    border-bottom: #fff 1px solid;
+}
+
+.mobile-cta-black {
+    color: #000;
+    border-bottom: #000 1px solid;
+}
+
+.mobile-footer {
+    margin-top: 40px;
+}
+
+.mobile-footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+.mobile-footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-footer li {
+    float: none;
+    list-style: none !important;
+    border-top: 1px solid #ccc;
+    padding: 18px 0 18px 0;
+    margin: 0 30px;
+}
+
+.mobile-footer h3 {
+    font-family: NeutrafaceText-Demi;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin: 10px 30px;
+    letter-spacing: 1px;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+    -ms-font-feature-settings: "kern", "liga", "clig", "alt", "smcp";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+    font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+}
+
+.mobile-center {
+    text-align: center;
+}
+
+.mobile-promo {
+    font-family: NeutrafaceText-Demi;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height:28px;
+    text-decoration: none;
+    color: #fff;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+    -ms-font-feature-settings: "kern", "liga", "clig", "alt", "smcp";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+    font-feature-settings: "kern", "liga", "clig", "calt", "smcp";
+}
+
+.mobile-cta-white {
+    color: #fff !important; 
+    border-bottom: #fff 1px solid;
+} 
+
+/*---------------END MOBILE HOME---------------*/
+
+/*---------------SEO FOOTER---------------*/
+.headline {
+    margin-top: 30px;
+    font: 24px NeutrafaceText-Book;
+}
+
+.subText {
+    font: 16px NeutrafaceText-Book;
+    padding-bottom: 20px;
+}
+/*---------------END SEO FOOTER---------------*/
+
+/* Youtube Video */
+     
+.zgVideoPoster {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    min-width: 150px;
+    min-height: 150px;
+    width: 100%;
+    z-index: 2;
+}
+
+.zgVideoPoster img {
+    width: 100%;
+    height: auto;
+}
+
+
+.zgVideoPoster .playbutton {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    background: url('https://style.zgallerie.com/css/images/btn_play.png') no-repeat;
+    background-size: 100%;
+    background-color: rgba(0,0,0,0.25);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.zgVideo {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background: none;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.zgVideo.show {
+    display: block;
+    background: rgba(0,0,0,0.85);
+    -webkit-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+.zgLastFrameImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 99;
+}
+.zgLastFrameImage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.zgVideoContainer {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    z-index: 2;
+}
+
+.zgVideoContainer iframe {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    z-index: 2;
+}
+.jquery-youtube-tubeplayer {
+    position: relative;
+    z-index: 1;
+}
+

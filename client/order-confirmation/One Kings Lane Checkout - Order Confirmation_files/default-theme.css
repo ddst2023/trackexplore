@@ -1,0 +1,201 @@
+:root {
+  /**
+    * Typography Heading 1
+    */
+  --ltv-ai-heading-1-font-family: 'proxima-nova';
+  --ltv-ai-heading-1-font-size: 62px;
+  --ltv-ai-heading-1-line-height: 42px;
+  --ltv-ai-heading-1-letter-spacing: -0.431px;
+  --ltv-ai-heading-1-font-weight: 700;
+
+  /**
+    * Typography Heading 2
+    */
+  --ltv-ai-heading-2-font-family: 'proxima-nova';
+  --ltv-ai-heading-2-font-size: 48px;
+  --ltv-ai-heading-2-line-height: 36px;
+  --ltv-ai-heading-2-letter-spacing: -0.2px;
+  --ltv-ai-heading-2-font-weight: 500;
+
+  /**
+    * Typography Heading 3
+    */
+  --ltv-ai-heading-3-font-family: 'proxima-nova';
+  --ltv-ai-heading-3-font-size: 24px;
+  --ltv-ai-heading-3-line-height: 28px;
+  --ltv-ai-heading-3-letter-spacing: -0.1px;
+  --ltv-ai-heading-3-font-weight: 500;
+
+  /**
+    * Typography Heading 4
+    */
+  --ltv-ai-heading-4-font-family: 'proxima-nova';
+  --ltv-ai-heading-4-font-size: 20px;
+  --ltv-ai-heading-4-line-height: 24px;
+  --ltv-ai-heading-4-letter-spacing: 0.32px;
+  --ltv-ai-heading-4-font-weight: 500;
+
+  /**
+    * Typography Heading 5
+    */
+  --ltv-ai-heading-5-font-family: 'proxima-nova';
+  --ltv-ai-heading-5-font-size: 16px;
+  --ltv-ai-heading-5-line-height: 24px;
+  --ltv-ai-heading-5-letter-spacing: 0.32px;
+  --ltv-ai-heading-5-font-weight: 500;
+
+  /**
+    * Typography Heading 6
+    */
+  --ltv-ai-heading-6-font-family: 'proxima-nova';
+  --ltv-ai-heading-6-font-size: 14px;
+  --ltv-ai-heading-6-line-height: 18px;
+  --ltv-ai-heading-6-letter-spacing: 0.32px;
+  --ltv-ai-heading-6-font-weight: 500;
+
+  /**
+    * Typography Body 1
+    */
+  --ltv-ai-body-1-font-family: 'proxima-nova';
+  --ltv-ai-body-1-font-size: 14px;
+  --ltv-ai-body-1-line-height: 24px;
+  --ltv-ai-body-1-letter-spacing: 0.25px;
+  --ltv-ai-body-1-font-weight: 400;
+
+  /**
+    * Typography Body 2
+    */
+  --ltv-ai-body-2-font-family: 'proxima-nova';
+  --ltv-ai-body-2-font-size: 12px;
+  --ltv-ai-body-2-line-height: 18px;
+  --ltv-ai-body-2-letter-spacing: 0.25px;
+  --ltv-ai-body-2-font-weight: 400;
+
+  /**
+    * Typography Label 1
+    */
+  --ltv-ai-label-1-font-family: 'NeutrafaceText';
+  --ltv-ai-label-1-font-size: 14px;
+  --ltv-ai-label-1-line-height: 24px;
+  --ltv-ai-label-1-letter-spacing: 1.75px;
+  --ltv-ai-label-1-font-weight: 600;
+  --ltv-ai-label-1-text-transform: uppercase;
+
+  /**
+    * Typography Label 2
+    */
+  --ltv-ai-label-2-font-family: 'NeutrafaceText';
+  --ltv-ai-label-2-font-size: 12px;
+  --ltv-ai-label-2-line-height: 24px;
+  --ltv-ai-label-2-letter-spacing: 2px;
+  --ltv-ai-label-2-font-weight: 600;
+  --ltv-ai-label-2-text-transform: uppercase;
+
+  /**
+   * Layout
+   */
+  --ltv-ai-layout-section-spacing: 15px;
+  --ltv-ai-layout-divider-color: rgba(216, 216, 216, 0.6);
+
+  /**
+    * Button
+    */
+  --ltv-ai-button-background-color: #3b5f58;
+  --ltv-ai-button-text-color: #ffffff;
+  --ltv-ai-secondary-button-border-color: #323232;
+  --ltv-ai-secondary-button-background-color: none;
+  --ltv-ai-secondary-button-text-color: #323232;
+  --ltv-ai-secondary-button-text-transform: uppercase;
+  --ltv-ai-button-disabled-background-color: #777777;
+
+  /**
+    * Icons
+    */
+  --ltv-ai-icon-filter: invert(0%) sepia(0%) saturate(26%) hue-rotate(97deg) brightness(89%) contrast(106%);
+  --ltv-ai-icon-contrast-filter: invert(100%) sepia(0%) saturate(574%) hue-rotate(69deg) brightness(118%) contrast(100%);
+  --ltv-ai-success-icon-filter: invert(48%) sepia(21%) saturate(847%) hue-rotate(117deg) brightness(97%) contrast(86%);
+
+  /**
+    * Header
+    */
+  --ltv-ai-header-background-color: #ffffff;
+  --ltv-ai-header-text-color: #000000;
+  --ltv-ai-header-border-color: #e5e7eb;
+  --ltv-ai-header-padding: 15px;
+
+  /**
+    * Bottom Navigation
+    */
+  --ltv-ai-bottom-navigation-height: 72px;
+  --ltv-ai-bottom-navigation-background-color: #ffffff;
+  --ltv-ai-bottom-navigation-hover-border-top-color: #000000;
+  --ltv-ai-bottom-navigation-hover-box-shadow: none;
+
+  /**
+    * Section Heading
+    */
+  --ltv-ai-section-heading-background-color: #f5f7f7;
+  --ltv-ai-section-heading-padding: 9px;
+
+  /**
+    * Rewards Card
+    */
+  --ltv-ai-rewards-card-background-color: #043730;
+  --ltv-ai-rewards-card-text-color: #f9f9f9;
+  --ltv-ai-rewards-card-icon-filter: invert(63%) sepia(24%) saturate(854%) hue-rotate(358deg) brightness(101%) contrast(84%);
+
+  /**
+    * Promo Card
+    */
+  --ltv-ai-promo-card-background-color: #f3f3f3;
+  --ltv-ai-promo-card-content-background-color: #ffffff;
+  --ltv-ai-promo-card-content-text-color: #323232;
+
+  /**
+    * Data Card
+    */
+  --ltv-ai-data-card-background-color: #f3f3f3;
+  --ltv-ai-data-card-text-color: #5e5e61;
+
+  /**
+    * List Card Item
+    */
+  --ltv-ai-list-card-item-background-color: #f9f9f9;
+  --ltv-ai-list-card-item-active-color: #c7c7c7;
+  --ltv-ai-list-card-item-text-color: #323232;
+
+  /**
+    * Rewards Activity
+    */
+  --ltv-ai-rewards-activity-time-color: #969696;
+  --ltv-ai-rewards-activity-earned-color: #338a33;
+  --ltv-ai-rewards-activity-redeemed-color: #bf2929;
+
+  /**
+    * My Membership
+    */
+  --ltv-ai-pending-cancellation-color: #bf2929;
+  --ltv-ai-offer-background-color: #3b5f58;
+  --ltv-ai-offer-text-color: #f9f9f9;
+  --ltv-ai-non-sale-price-text-color: #a0a3a7;
+
+  /**
+   * Form
+   */
+  --ltv-ai-form-input-background-color: #ffffff;
+  --ltv-ai-form-input-border-color: #333;
+  --ltv-ai-form-input-focused-border-color: #333;
+  --ltv-ai-form-input-text-color: #000000;
+  --ltv-ai-form-input-border-radius: 2px;
+  --ltv-ai-form-input-padding: 8px;
+  --ltv-ai-form-input-label-background-color: #ffffff;
+  --ltv-ai-form-error-text-color: #ca3b4c;
+
+  /**
+   * Redeem Widget
+   */
+  --ltv-ai-redeem-widget-background-color: #f9f9f9;
+  --ltv-ai-redeem-widget-text-color: #323232;
+  --ltv-ai-redeem-widget-border-color: #e7e7e7;
+  --ltv-ai-redeem-widget-spacing: 20px 0;
+}
